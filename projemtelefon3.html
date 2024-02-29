@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aşkım İçin Özel Site</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f17575;
+    position: relative;
+  }
+  header {
+    background-color: #f083e1;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+  }
+  main {
+    padding: 0px;
+    position: relative;
+  }
+  .text {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .text p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .images {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+  }
+  .images img {
+    max-width: 10%;
+    height: auto;
+    margin: 0 10px;
+    position: absolute;
+  }
+  .months {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .month-button {
+    background-color: #fff;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+  .popup img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Aşkımın Doğum Günü Kutlu Olsun!</h1>
+</header>
+
+<main>
+    <div class="text">
+        <p>Aşkım için özel olarak hazırlanmış bir site.</p>
+        <p>Birlikte paylaştığımız güzel anılardan bazıları burada.</p>
+      </div>
+    <div class="images">
+        <img src="C:\Users\balki\OneDrive\Masaüstü\WhatsApp Image 2024-02-12 at 19.49.53.jpeg" alt="Resim 1">
+      </div>
+  <div class="months">
+    <button class="month-button" onclick="togglePopup('haziran2023Popup')">Haziran 2023</button>
+    <button class="month-button" onclick="togglePopup('temmuz2023Popup')">Temmuz 2023</button>
+    <button class="month-button" onclick="togglePopup('agustos2023Popup')">Ağustos 2023</button>
+    <button class="month-button" onclick="togglePopup('eylul2023Popup')">Eylül 2023</button>
+    <button class="month-button" onclick="togglePopup('ekim2023Popup')">Ekim 2023</button>
+    <button class="month-button" onclick="togglePopup('kasim2023Popup')">Kasım 2023</button>
+    <button class="month-button" onclick="togglePopup('aralik2023Popup')">Aralık 2023</button>
+    <button class="month-button" onclick="togglePopup('ocak2024Popup')">Ocak 2024</button>
+    <button class="month-button" onclick="togglePopup('subat2024Popup')">Şubat 2024</button>
+  </div>
+</main>
+
+<!-- Haziran 2023 Popup -->
+<div id="haziran2023Popup" class="popup">
+  <h2>Haziran 2023 Anıları</h2>
+  <p>Haziran 2023'e ait özel anılarınızı buraya ekleyebilirsiniz.</p>
+  <!-- Örnek resimler -->
+  <img src="https://github.com/EmirKars/selinim/blob/main/fotoolar/21%20eyl%C3%BCl.jpg" alt="Haziran 2023 Anısı 1">
+  <p>Buraya yazı ekleyebilirsiniz...</p>
+  <img src="C:\Users\balki\OneDrive\Masaüstü\Screenshot 2024-02-09 105904.png" alt="Haziran 2023 Anısı 2">
+  <!-- Örnek metin -->
+  <p>Buraya yazı ekleyebilirsiniz...</p>
+  <p>Buraya yazı ekleyebilirsiniz...</p>
+  <button onclick="closePopup('haziran2023Popup')">Kapat</button>
+</div>
+
+<!-- Temmuz 2023 Popup -->
+<div id="temmuz2023Popup" class="popup">
+  <h2>Temmuz 2023 Anıları</h2>
+  <p>Temmuz 2023'e ait özel anılarınızı buraya ekleyebilirsiniz.</p>
+  <!-- Örnek resimler -->
+  <img src="temmuz2023_anisi_1.jpg" alt="Temmuz 2023 Anısı 1">
+  <img src="temmuz2023_anisi_2.jpg" alt="Temmuz 2023 Anısı 2">
+  <!-- Örnek metin -->
+  <p>Örnek metin 1</p>
+  <p>Örnek metin 2</p>
+  <button onclick="closePopup('temmuz2023Popup')">Kapat</button>
+</div>
+
+<!-- Ağustos 2023 Popup -->
+<div id="agustos2023Popup" class="popup">
+  <h2>Ağustos 2023 Anıları</h2>
+  <p>Ağustos 2023'e ait özel anılarınızı buraya ekleyebilirsiniz.</p>
+  <!-- Örnek resimler -->
+  <img src="agustos2023_anisi_1.jpg" alt="Ağustos 2023 Anısı 1">
+  <img src="agustos2023_anisi_2.jpg" alt="Ağustos 2023 Anısı 2">
+  <!-- Örnek metin -->
+  <p>Örnek metin 1</p>
+  <p>Örnek metin 2</p>
+  <button onclick="closePopup('agustos2023Popup')">Kapat</button>
+</div>
+
+<!-- Eylül 2023 Popup -->
+<div id="eylul2023Popup" class="popup">
+  <h2>Eylül 2023 Anıları</h2>
+  <p>Eylül 2023'e ait özel anılarınızı buraya ekleyebilirsiniz.</p>
+  <!-- Örnek resimler -->
+  <img src="eylul2023_anisi_1.jpg" alt="Eylül 2023 Anısı 1">
+  <img src="eylul2023_anisi_2.jpg" alt="Eylül 2023 Anısı 2">
+  <!-- Örnek metin -->
+  <p>Örnek metin 1</p>
+  <p>Örnek metin 2</p>
+  <button onclick="closePopup('eylul2023Popup')">Kapat</button>
+</div>
+
+<!-- Ekim 2023 Popup -->
+<div id="ekim2023Popup" class="popup">
+  <h2>Ekim 2023 Anıları</h2>
+  <p>Ekim 2023'e ait özel anılarınızı buraya ekleyebilirsiniz.</p>
+  <!-- Örnek resimler -->
+  <img src="ekim2023_anisi_1.jpg" alt="Ekim 2023 Anısı 1">
+  <img src="ekim2023_anisi_2.jpg" alt="Ekim 2023 Anısı 2">
+  <!-- Örnek metin -->
+  <p>Örnek metin 1</p>
+  <p>Örnek metin 2</p>
+  <button onclick="closePopup('ekim2023Popup')">Kapat</button>
+</div>
+
+<!-- Kasım 2023 Popup -->
+<div id="kasim2023Popup" class="popup">
+  <h2>Kasım 2023 Anıları</h2>
+  <p>Kasım 2023'e ait özel anılarınızı buraya ekleyebilirsiniz.</p>
+  <!-- Örnek resimler -->
+  <img src="kasim2023_anisi_1.jpg" alt="Kasım 2023 Anısı 1">
+  <img src="kasim2023_anisi_2.jpg" alt="Kasım 2023 Anısı 2">
+  <!-- Örnek metin -->
+  <p>Örnek metin 1</p>
+  <p>Örnek metin 2</p>
+  <button onclick="closePopup('kasim2023Popup')">Kapat</button>
+</div>
+
+<!-- Aralık 2023 Popup -->
+<div id="aralik2023Popup" class="popup">
+  <h2>Aralık 2023 Anıları</h2>
+  <p>Aralık 2023'e ait özel anılarınızı buraya ekleyebilirsiniz.</p>
+  <!-- Örnek resimler -->
+  <img src="aralik2023_anisi_1.jpg" alt="Aralık 2023 Anısı 1">
+  <img src="aralik2023_anisi_2.jpg" alt="Aralık 2023 Anısı 2">
+  <!-- Örnek metin -->
+  <p>Örnek metin 1</p>
+  <p>Örnek metin 2</p>
+  <button onclick="closePopup('aralik2023Popup')">Kapat</button>
+</div>
+
+<!-- Ocak 2024 Popup -->
+<div id="ocak2024Popup" class="popup">
+  <h2>Ocak 2024 Anıları</h2>
+  <p>Ocak 2024'e ait özel anılarınızı buraya ekleyebilirsiniz.</p>
+  <!-- Örnek resimler -->
+  <img src="ocak2024_anisi_1.jpg" alt="Ocak 2024 Anısı 1">
+  <img src="ocak2024_anisi_2.jpg" alt="Ocak 2024 Anısı 2">
+  <!-- Örnek metin -->
+  <p>Örnek metin 1</p>
+  <p>Örnek metin 2</p>
+  <button onclick="closePopup('ocak2024Popup')">Kapat</button>
+</div>
+
+<!-- Şubat 2024 Popup -->
+<div id="subat2024Popup" class="popup">
+  <h2>Şubat 2024 Anıları</h2>
+  <p>Şubat 2024'e ait özel anılarınızı buraya ekleyebilirsiniz.</p>
+  <!-- Örnek resimler -->
+  <img src="subat2024_anisi_1.jpg" alt="Şubat 2024 Anısı 1">
+  <img src="subat2024_anisi_2.jpg" alt="Şubat 2024 Anısı 2">
+  <!-- Örnek metin -->
+  <p>Örnek metin 1</p>
+  <p>Örnek metin 2</p>
+  <button onclick="closePopup('subat2024Popup')">Kapat</button>
+</div>
+
+<!-- jQuery ve jQuery UI kütüphaneleri -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $(".popup").draggable({
+      touch: true // Dokunmatik desteği etkinleştir
+    });
+  });
+
+  function togglePopup(popupId) {
+    closeAllPopups();
+    var popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+      // Pop-up'ı ortala
+      var windowWidth = $(window).width();
+      var windowHeight = $(window).height();
+      var popupWidth = $(popup).width();
+      var popupHeight = $(popup).height();
+      $(popup).css({
+        top: (windowHeight - popupHeight) / 2,
+        left: (windowWidth - popupWidth) / 2
+      });
+    }
+  }
+
+  function closeAllPopups() {
+    var popups = document.querySelectorAll('.popup');
+    popups.forEach(function(popup) {
+      popup.style.display = 'none';
+    });
+  }
+
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
