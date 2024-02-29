@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Site for My Love</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f17575;
+    position: relative;
+  }
+  header {
+    background-color: #f083e1;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+  }
+  main {
+    padding: 0px;
+    position: relative;
+  }
+  .maymun {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+  }
+  .maymun img {
+    max-width: 10%;
+    height: auto;
+    margin: 0 100px;
+    position: absolute;
+  }
+  .text {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .text p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .images {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+  }
+  .images img {
+    max-width: 10%;
+    height: auto;
+    margin: 0 10px;
+    position: absolute;
+  }
+  .months {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .month-button {
+    background-color: #fff;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+  .popup img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Happy Birthday My Love!</h1>
+</header>
+
+<main>
+    <div class="text">
+        <p>This is a special site created just for you, my love.</p>
+        <p>Here are some beautiful memories we've shared together.</p>
+      </div>
+    <div class="images">
+        <img src="C:\Users\balki\OneDrive\Masaüstü\WhatsApp Image 2024-02-12 at 19.49.53.jpeg" alt="Image 1">
+      </div>
+  <div class="months">
+    <button class="month-button" onclick="togglePopup('june2023Popup')">June 2023</button>
+    <button class="month-button" onclick="togglePopup('july2023Popup')">July 2023</button>
+    <button class="month-button" onclick="togglePopup('august2023Popup')">August 2023</button>
+    <button class="month-button" onclick="togglePopup('september2023Popup')">September 2023</button>
+    <button class="month-button" onclick="togglePopup('october2023Popup')">October 2023</button>
+    <button class="month-button" onclick="togglePopup('november2023Popup')">November 2023</button>
+    <button class="month-button" onclick="togglePopup('december2023Popup')">December 2023</button>
+    <button class="month-button" onclick="togglePopup('january2024Popup')">January 2024</button>
+    <button class="month-button" onclick="togglePopup('february2024Popup')">February 2024</button>
+  </div>
+  <div class="maymun">
+    <img src="C:\Users\balki\OneDrive\Masaüstü\WhatsApp Image 2024-02-12 at 20.32.38.jpeg" alt="Image 1" style="bottom: 0; left: 1;">
+  </div>
+</main>
+
+<!-- June 2023 Popup -->
+<div id="june2023Popup" class="popup">
+  <h2>June 2023 Memories</h2>
+  <p>You can add your special memories of June 2023 here.</p>
+  <!-- Sample images -->
+  <img src="C:\Users\balki\OneDrive\Masaüstü\WhatsApp Image 2024-02-12 at 19.49.53.jpeg"alt="June 2023 Memory 1">
+  <p>fenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+  <img src="C:\Users\balki\OneDrive\Masaüstü\Screenshot 2024-02-09 105904.png" alt="June 2023 Memory 2">
+  <!-- Sample text -->
+  <p>fenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+  <p>fenaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+  <button onclick="closePopup('june2023Popup')">Close</button>
+</div>
+
+<!-- July 2023 Popup -->
+<div id="july2023Popup" class="popup">
+  <h2>July 2023 Memories</h2>
+  <p>You can add your special memories of July 2023 here.</p>
+  <!-- Sample images -->
+  <img src="july2023_memory_1.jpg" alt="July 2023 Memory 1">
+  <img src="july2023_memory_2.jpg" alt="July 2023 Memory 2">
+  <!-- Sample text -->
+  <p>Sample text 1</p>
+  <p>Sample text 2</p>
+  <button onclick="closePopup('july2023Popup')">Close</button>
+</div>
+
+<!-- August 2023 Popup -->
+<div id="august2023Popup" class="popup">
+  <h2>August 2023 Memories</h2>
+  <p>You can add your special memories of August 2023 here.</p>
+  <!-- Sample images -->
+  <img src="august2023_memory_1.jpg" alt="August 2023 Memory 1">
+  <img src="august2023_memory_2.jpg" alt="August 2023 Memory 2">
+  <!-- Sample text -->
+  <p>Sample text 1</p>
+  <p>Sample text 2</p>
+  <button onclick="closePopup('august2023Popup')">Close</button>
+</div>
+
+<!-- September 2023 Popup -->
+<div id="september2023Popup" class="popup">
+  <h2>September 2023 Memories</h2>
+  <p>You can add your special memories of September 2023 here.</p>
+  <!-- Sample images -->
+  <img src="september2023_memory_1.jpg" alt="September 2023 Memory 1">
+  <img src="september2023_memory_2.jpg" alt="September 2023 Memory 2">
+  <!-- Sample text -->
+  <p>Sample text 1</p>
+  <p>Sample text 2</p>
+  <button onclick="closePopup('september2023Popup')">Close</button>
+</div>
+
+<!-- October 2023 Popup -->
+<div id="october2023Popup" class="popup">
+  <h2>October 2023 Memories</h2>
+  <p>You can add your special memories of October 2023 here.</p>
+  <!-- Sample images -->
+  <img src="october2023_memory_1.jpg" alt="October 2023 Memory 1">
+  <img src="october2023_memory_2.jpg" alt="October 2023 Memory 2">
+  <!-- Sample text -->
+  <p>Sample text 1</p>
+  <p>Sample text 2</p>
+  <button onclick="closePopup('october2023Popup')">Close</button>
+</div>
+
+<!-- November 2023 Popup -->
+<div id="november2023Popup" class="popup">
+  <h2>November 2023 Memories</h2>
+  <p>You can add your special memories of November 2023 here.</p>
+  <!-- Sample images -->
+  <img src="november2023_memory_1.jpg" alt="November 2023 Memory 1">
+  <img src="november2023_memory_2.jpg" alt="November 2023 Memory 2">
+  <!-- Sample text -->
+  <p>Sample text 1</p>
+  <p>Sample text 2</p>
+  <button onclick="closePopup('november2023Popup')">Close</button>
+</div>
+
+<!-- December 2023 Popup -->
+<div id="december2023Popup" class="popup">
+  <h2>December 2023 Memories</h2>
+  <p>You can add your special memories of December 2023 here.</p>
+  <!-- Sample images -->
+  <img src="december2023_memory_1.jpg" alt="December 2023 Memory 1">
+  <img src="december2023_memory_2.jpg" alt="December 2023 Memory 2">
+  <!-- Sample text -->
+  <p>Sample text 1</p>
+  <p>Sample text 2</p>
+  <button onclick="closePopup('december2023Popup')">Close</button>
+</div>
+
+<!-- January 2024 Popup -->
+<div id="january2024Popup" class="popup">
+  <h2>January 2024 Memories</h2>
+  <p>You can add your special memories of January 2024 here.</p>
+  <!-- Sample images -->
+  <img src="january2024_memory_1.jpg" alt="January 2024 Memory 1">
+  <img src="january2024_memory_2.jpg" alt="January 2024 Memory 2">
+  <!-- Sample text -->
+  <p>Sample text 1</p>
+  <p>Sample text 2</p>
+  <button onclick="closePopup('january2024Popup')">Close</button>
+</div>
+
+<!-- February 2024 Popup -->
+<div id="february2024Popup" class="popup">
+  <h2>February 2024 Memories</h2>
+  <p>You can add your special memories of February 2024 here.</p>
+  <!-- Sample images -->
+  <img src="february2024_memory_1.jpg" alt="February 2024 Memory 1">
+  <img src="february2024_memory_2.jpg" alt="February 2024 Memory 2">
+  <!-- Sample text -->
+  <p>Sample text 1</p>
+  <p>Sample text 2</p>
+  <button onclick="closePopup('february2024Popup')">Close</button>
+</div>
+
+<!-- jQuery and jQuery UI libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $(".popup").draggable();
+  });
+
+  function togglePopup(popupId) {
+    closeAllPopups();
+    var popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+    }
+  }
+
+  function closeAllPopups() {
+    var popups = document.querySelectorAll('.popup');
+    popups.forEach(function(popup) {
+      popup.style.display = 'none';
+    });
+  }
+
+  function closePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    if (popup) {
+      popup.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
